@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+body{
+    background-color: rgb(242, 242, 245);
+}
+.gradient{
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background-image: url('Bitmap\ \(1\).jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.dark-background{
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background-image: url('dark.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+h2{
+    color: #E3E4F1;
+    font-size: 30px;
+}
+.input-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 15px;
+    text-align: left;
+}
+button{
+    border: none;
+    background: none;
+}
+.input-border{
+    width: 450px;
+    height: 45px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: white;
+}
+input{
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    width: 95%;
+    height: 90%;
+    font-size: 17px;
+}
+.input-img{
+    width: 20px;
+    height: 20px;
+}
+.dark-input{
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    width: 95%;
+    height: 90%;
+    font-size: 17px;
+    background-color: rgb(0, 14, 61);
+}
+ol li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+li{
+    display: flex;
+    align-items: center;
+}
+ol li::before{
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+.heading{
+    display: flex;
+    justify-content: space-between;
+    height: 250px;
+    align-items: center;
+
+}
+ol li.checked{
+    color:#555;
+    text-decoration: line-through;
+}
+ol li.checked::before{
+    background-image: url(images/checked.png);
+}
+ol li span{
+    position: absolute;
+    right: 0;
+    top: 5;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ol li span:hover{
+    background-color:  #E3E4F1;
+}
+.todo-list{
+    width: 450px;
+    margin: 0 auto;
+    border-radius: 3px;
+}
+.dark-mode{
+    background-color: rgb(32, 31, 31);
+    color: whitesmoke;
+}
+.input-dark-mode{
+    background-color: #25273D;
+    color: rgb(168, 165, 165);
+}
+.mobile{
+    display: none;
+}
+#check-box{
+    border: none;
+    outline: none;
+}
+i{
+    color: white;
+    font-size:50px;
+}
+.fa-sun{
+    display: none;
+}
+
+@media only screen and (max-width: 500px) {
+    .gradient{
+        width: 100%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        background-image: url('Bitmap\ \(1\).jpg'); 
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .input-border{
+        width: 200px;
+        height: 45px;
+        border-radius: 3px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        
+    }
+    .todo-list{
+        width: 300px;
+        margin: 0 auto;
+        border-radius: 3px;
+    }
+    .heading{
+        display: flex;
+        justify-content: space-between;
+        height: 100px;
+        align-items: center;
+        
+    
+    }
+  }
+  @media only screen and (max-width: 1370px){
+    .mobile{
+        display: block;
+        background-color: linear-gradient(#5596FF,#AC2DEB);
+        color: white;
+        height: 45px;
+        border: solid 1px white;
+        border-radius: 3px;
+        width: 55px;
+        margin-bottom: 15px;
+        font-size: 12px;
+    }
+  }

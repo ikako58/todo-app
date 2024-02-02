@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/99caa69cc4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+        <div class="gradient" id="gradient">
+            <div class="input-container">
+                <div class="heading">
+                    <h2>T O D O</h2>
+                    <button id="toggle"><i class="fa-solid fa-sun" id="sun"></i> <i class="fa-solid fa-moon" id="moon"></i></button>
+                </div>
+                <div class="input-border" id="input-border">
+                    <img src="images/unchecked.png" alt="unchecked" class="input-img" >
+                    <input type="text" placeholder="Create a new todo" id="input-box">
+                </div>
+            </div>
+            <button class="mobile" onclick="addTask()">Add TODO</button>
+        </div>
+    <div class="todo-list" id="todo-list">
+        <ol id="list-container">
+        </ol>
+    </div>    
+    <script src="script.js"></script>
+</body>
+</html>
